@@ -1,2 +1,0 @@
-#!/bin/magick -script
--size 100x100 xc:red ( rose: -rotate -90 ) +append  -write show:

@@ -12,7 +12,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
@@ -91,11 +91,22 @@ set_popularities = {
 create_country_leader = {
 	name = "TheAltAccount"
 	desc = ""
-	picture = "Portrait_COC_Alt.dds"
+	picture = "alt.dds"
 	expire = "1953.3.1"
 	ideology = despotism
 	traits = {
-		
+
+	}
+}
+
+create_country_leader = {
+	name = "dasehak"
+	desc = ""
+	picture = "Portrait_dasehak.dds"
+	expire = "1953.3.1"
+	ideology = communism
+	traits = {
+
 	}
 }
 
@@ -106,113 +117,232 @@ add_namespace = {
 
 create_field_marshal = {
     name = "TheAltAccount"
-    picture = "Portrait_COC_Alt.dds"
-    traits = { defensive_doctrine armor_officer trickster }
-    skill = 3
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 2
+    picture = "alt.dds"
+    skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "ANDREY"
 	picture = "Portrait_COC_ANDREY.dds"
-	traits = { defensive_doctrine urban_assault_specialist old_guard }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-	id = 100
-}
-
-create_field_marshal = {
-	name = "Com"
-	picture = "Portrait_COC_Com.dds"
-	traits = { trait_cautious armor_officer old_guard }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "localcc"
-	picture = "Portrait_COC_localcc.dds"
-	traits = { offensive_doctrine armor_officer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "HFIB"
-	picture = "Portrait_COC_HFIB.dds"
-	traits = { brilliant_strategist trait_engineer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 4
+	picture = "hfib.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Зан"
-	picture = "Portrait_COC_Zan.dds"
-	traits = { old_guard armor_officer career_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 3
+	picture = "zan.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "dasehak"
+	picture = "Portrait_dasehak.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
-	name = "dasehak"
-	picture = "Portrait_COC_dasehak.dds"
-	traits = { trait_engineer urban_assault_specialist }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
+	name = "Com"
+	picture = "com.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "a73"
 	picture = "Portrait_COC_a73.dds"
-	traits = { defensive_doctrine old_guard }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Sanke"
-	picture = "Portrait_COC_Sanke.dds"
-	traits = { offensive_doctrine old_guard }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	picture = "saratov.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Gear196"
 	picture = "Portrait_COC_Gear.dds"
-	traits = { brilliant_strategist trait_engineer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Neon"
+	picture = "Portrait_COC_Neon.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Клюр"
+	picture = "Portrait_COC_Klur.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "antislope"
+	picture = "slope.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "9456"
+	picture = "9456.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "AkaBucket"
+	picture = "akabucket.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "The Fak"
+	picture = "fak.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "habiassriz"
+	picture = "habiassriz.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Luftwaffle"
+	picture = "luftwaffle.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Poznan"
+	picture = "poznan.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "topgamer228"
+	picture = "topgamer228.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "voidpepe"
+	picture = "voidpepe.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Warimp"
+	picture = "warimp.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "zhmuokey"
+	picture = "zhmuokey.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "localcc"
+	picture = "Portrait_COC_localcc.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 if = {

@@ -1,0 +1,45 @@
+###########################
+# COC Events
+###########################
+
+add_namespace = coc
+
+# egor unban
+country_event = {
+    id = coc.1
+    title = coc.1.t
+    desc = coc.1.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = coc.1.a
+        ai_chance = { factor 50 }
+        effect_tooltip = {
+            COC = { add_stability = 0.05 }
+        }
+    }
+
+    option = {
+        name = coc.1.b
+        ai_chance = { factor 50 }
+        effect_tooltip = {
+            COC = {
+                custom_effect_tooltip = COC_strange_events
+                load_focus_tree = german_focus
+
+                add_stability = -0.05
+
+                add_popularity = {
+                    ideology = neutrality
+                    popularity = -0.1
+                }
+
+                add_popularity = {
+                    ideology = fascism
+                    popularity = 0.1
+                }
+            }
+        }
+    }
+}

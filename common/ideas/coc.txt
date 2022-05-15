@@ -187,8 +187,26 @@ ideas = {
 			}
 		}
 		
+        the_great_history_1 = {
+			picture = FRA_scw_intervention_republicans_focus
+			
+			allowed = {
+                tag = COC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				surrender_limit = 0.2
+				army_defence_factor = 0.1
+			}
+		}
+		
 		colonisation = {
-            picture = FRA_scw_intervention_republicans_focus
+            picture = generic_intel_bonus
 			
 			allowed = {
                 tag = COC
@@ -206,7 +224,7 @@ ideas = {
 		}
 		
         colonisation_research = {
-            picture = FRA_scw_intervention_republicans_focus
+            picture = generic_intel_bonus
 			
 			allowed = {
                 tag = COC
@@ -224,7 +242,7 @@ ideas = {
 		}
 		
         colonisation_prod = {
-            picture = FRA_scw_intervention_republicans_focus
+            picture = generic_intel_bonus
 			
 			allowed = {
                 tag = COC
@@ -243,7 +261,7 @@ ideas = {
 		}
 		
         senate_diversity = {
-            picture = war_department
+            picture = generic_production_bonus
 			
 			allowed = {
                 tag = COC
@@ -259,7 +277,7 @@ ideas = {
 		}
 		
 		server_defence_plan = {
-            picture = idea_generic_reserve_divisions
+            picture = YUG_federal_defense_council
 			
 			allowed = {
                 tag = COC

@@ -1,23 +1,23 @@
 ﻿focus_tree = {
 	id = coc_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = COC
 		}
 	}
-	
+
 	default = no
-	
+
 	continuous_focus_position = { x = 50 y = 3000 }
 	focus = {
 		id = COC_tenth_conference
-		icon = GFX_focus_eng_concessions_to_the_trade_unions 
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = {  }
-		x = 8
+		x = 17
 		y = 0
 		cost = 10
 
@@ -33,7 +33,7 @@
 		#	NOT = { is_in_faction_with = JAP }
 		#	NOT = { has_country_flag = #britain_enforced_our_loyalty }
 		#}
-		
+
 		bypass = {
 
 		}
@@ -46,7 +46,7 @@
 			add_political_power = 100
 		}
 	}
-	
+
 	focus = {
 		id = COC_TheAltAccount
 		icon = GFX_focus_generic_monarchy_2
@@ -66,11 +66,9 @@
                 remove_idea = power_struggle
                 add_idea = power_struggle_1
             }
-            
-			set_rule = { can_send_volunteers = yes }
 		}
 	}
-	
+
 	focus = {
 		id = COC_ANDREY
 		icon = GFX_focus_hun_elect_a_king
@@ -90,11 +88,11 @@
                 remove_idea = power_struggle
                 add_idea = power_struggle_1
             }
-            
+
 			#remove_ideas = power_struggle
-			
-			remove_unit_leader = 100
-			
+
+			#remove_unit_leader = 100
+
 			create_country_leader = {
 				name = "ANDREY"
 				desc = ""
@@ -107,7 +105,7 @@
 			}
 		}
 	}
-	
+
     focus = {
 		id = COC_full_perestroy
 		icon = GFX_focus_generic_industry_3
@@ -116,7 +114,7 @@
 		y = 1
 		relative_position_id = COC_ANDREY
 		cost = 5
-		
+
         bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = construction_effort_tt
@@ -137,7 +135,7 @@
 		completion_reward = {
             add_stability = -0.03
             add_war_support = -0.02
-		
+
             random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
@@ -156,7 +154,7 @@
 			}
 		}
 	}
-	
+
     focus = {
 		id = COC_reorg_senate
 		icon = GFX_goal_generic_intelligence_exchange
@@ -180,7 +178,7 @@
 			}
 		}
     }
-    
+
     focus = {
 		id = COC_flexible_plan
 		icon = GFX_goal_generic_production
@@ -202,7 +200,7 @@
             }
 		}
     }
-    
+
     focus = {
 		id = COC_kazah_cult
 		icon = GFX_goal_generic_demand_territory
@@ -211,7 +209,7 @@
 		y = 1
 		relative_position_id = COC_reorg_senate
 		cost = 5
-		
+
         bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = construction_effort_tt
@@ -248,7 +246,7 @@
 			}
 		}
     }
-    
+
     focus = {
 		id = COC_conceptual_monitoring
 		icon = GFX_goal_generic_dangerous_deal
@@ -269,14 +267,14 @@
             }
 		}
     }
-    
+
     focus = {
 		id = COC_bot_remake
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = COC_kazah_cult }
+		prerequisite = { focus = COC_flexible_plan }
 		x = 0
 		y = 1
-		relative_position_id = COC_kazah_cult
+		relative_position_id = COC_flexible_plan
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -285,19 +283,19 @@
 
 		completion_reward = {
             swap_ideas = {
-                remove_idea = unstable_active
-                add_idea = unstable_active_1
+                remove_idea = unstable_active_1
+                add_idea = unstable_active_2
             }
 		}
     }
-    
+
     focus = {
 		id = COC_industry_zan
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = COC_flexible_plan }
+		prerequisite = { focus = COC_kazah_cult }
 		x = 0
 		y = 1
-		relative_position_id = COC_flexible_plan
+		relative_position_id = COC_kazah_cult
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -313,7 +311,7 @@
 			}
 		}
     }
-    
+
     focus = {
 		id = COC_diversity_senate
 		icon = GFX_focus_generic_diplomatic_treaty
@@ -331,7 +329,7 @@
             add_ideas = senate_diversity
 		}
     }
-    
+
     focus = {
 		id = COC_shop_remake
 		icon = GFX_goal_generic_construction2
@@ -340,7 +338,7 @@
 		prerequisite = { focus = COC_new_era }
 		x = 1
 		y = 1
-		relative_position_id = COC_bot_remake
+		relative_position_id = COC_industry_zan
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -354,15 +352,15 @@
             }
 		}
     }
-    
+
     focus = {
 		id = COC_defence_effort
 		icon = GFX_goal_generic_defence
-		prerequisite = { focus = COC_industry_zan }
+		prerequisite = { focus = COC_bot_remake }
 		prerequisite = { focus = COC_diversity_senate }
 		x = 1
 		y = 1
-		relative_position_id = COC_industry_zan
+		relative_position_id = COC_bot_remake
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -373,7 +371,7 @@
             add_ideas = server_defence_plan
 		}
     }
-    
+
     focus = {
 		id = COC_new_problem
 		icon = GFX_goal_generic_more_territorial_claims
@@ -393,7 +391,7 @@
             add_political_power = 60
 		}
     }
-    
+
     focus = {
 		id = COC_save_stability
 		icon = GFX_goal_generic_neutrality_focus
@@ -414,14 +412,14 @@
                 remove_idea = power_struggle_1
                 add_idea = power_struggle_2
             }
-            
+
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.15
             }
 		}
     }
-    
+
     focus = {
 		id = COC_end_crisis
 		icon = GFX_goal_demand_sudetenland
@@ -442,7 +440,7 @@
             }
 		}
     }
-    
+
     focus = {
 		id = COC_support_coders
 		icon = GFX_focus_research2
@@ -460,7 +458,7 @@
             add_research_slot = 1
 		}
     }
-    
+
     focus = {
 		id = COC_event_schedule
 		icon = GFX_goal_generic_construct_civ_factory
@@ -475,13 +473,13 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            remove_ideas = unstable_active
+            remove_ideas = unstable_active_2
 		}
     }
-    
+
     focus = {
-		id = COC_kal
-		icon = GFX_goal_generic_construct_civ_factory
+		id = COC_assimilation
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = COC_support_coders }
 		x = 0
 		y = 1
@@ -493,10 +491,34 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            remove_ideas = unstable_active
+            remove_ideas = newfag_problems_1
 		}
     }
-    
+
+    focus = {
+		id = COC_centrism
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = COC_save_stability }
+		prerequisite = { focus = COC_event_schedule }
+		prerequisite = { focus = COC_assimilation }
+		x = 0
+		y = 3
+		relative_position_id = COC_save_stability
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            remove_ideas = power_struggle_2
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.1
+            }
+		}
+    }
+
     focus = {
 		id = COC_return_lamp
 		icon = GFX_goal_unknown
@@ -517,12 +539,12 @@
                 remove_idea = power_struggle_1
                 add_idea = power_struggle_2
             }
-            
+
             add_popularity = {
                 ideology = neutrality
                 popularity = 0.1
             }
-            
+
             create_country_leader = {
 				name = "Com"
 				desc = ""
@@ -535,7 +557,50 @@
 			}
 		}
     }
-    
+
+    focus = {
+		id = COC_full_neutrality
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = COC_return_lamp }
+		prerequisite = { focus = COC_event_schedule }
+		prerequisite = { focus = COC_assimilation }
+		mutually_exclusive = { focus = COC_unban_egor }
+		x = 0
+		y = 3
+		relative_position_id = COC_return_lamp
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            remove_ideas = power_struggle_2
+            swap_ideas = {
+                remove_idea = the_great_history
+                add_idea = the_great_history_1
+            }
+		}
+    }
+
+    focus = {
+		id = COC_unban_egor
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = COC_full_neutrality }
+		x = 0
+		y = 1
+		relative_position_id = COC_full_neutrality
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            country_event = { id = coc.1 }
+		}
+    }
+
     focus = {
 		id = COC_unthinkable_variant
 		icon = GFX_focus_spr_unify_the_london_bureau
@@ -556,14 +621,14 @@
                 ideology = communism
                 popularity = 0.2
             }
-            
+
             add_popularity = {
                 ideology = democracy
                 popularity = -0.1
             }
 		}
     }
-	
+
     focus = {
 		id = COC_perestroy
 		icon = GFX_focus_generic_industry_1
@@ -572,7 +637,7 @@
 		y = 1
 		relative_position_id = COC_TheAltAccount
 		cost = 5
-		
+
         bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = construction_effort_tt
@@ -593,7 +658,7 @@
 		completion_reward = {
             add_stability = 0.02
             add_war_support = 0.03
-		
+
             random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
@@ -612,7 +677,7 @@
 			}
 		}
 	}
-	
+
     focus = {
 		id = COC_mare_nostrum
 		icon = GFX_focus_generic_black_sea_focus
@@ -631,7 +696,7 @@
 			#add_state_claim = 46
 			#add_state_claim = 77
 			#add_state_claim = 211
-			
+
 			navy_experience = 15
 			random_owned_controlled_state = {
 				limit = {
@@ -651,7 +716,7 @@
 			}
 		}
 	}
-		
+
     focus = {
 		id = COC_more_events
 		icon = GFX_goal_generic_national_unity
@@ -672,7 +737,7 @@
             }
 		}
 	}
-	
+
 	focus = {
 		id = COC_counter_army
 		icon = GFX_goal_generic_political_pressure
@@ -696,7 +761,7 @@
 			}
 		}
 	}
-	
+
 	focus = {
 		id = COC_new_era
 		icon = GFX_goal_generic_propaganda
@@ -717,7 +782,7 @@
             }
 		}
 	}
-	
+
     focus = {
 		id = COC_colonisation
 		icon = GFX_goal_generic_major_war
@@ -736,7 +801,7 @@
             add_ideas = colonisation
 		}
 	}
-	
+
     focus = {
 		id = COC_colonisation_jeggy
 		icon = GFX_goal_unknown
@@ -759,7 +824,7 @@
             }
 		}
 	}
-	
+
     focus = {
 		id = COC_colonisation_rainbows
 		icon = GFX_goal_unknown
@@ -782,7 +847,7 @@
             }
 		}
 	}
-	
+
 	focus = {
 		id = COC_monitoring
 		icon = GFX_goal_generic_forceful_treaty
@@ -804,12 +869,12 @@
             }
 		}
 	}
-	
+
 	focus = {
 		id = COC_industry_com
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = COC_counter_army }
-		x = 1 
+		x = 1
 		y = 1
 		relative_position_id = COC_counter_army
 		cost = 5
@@ -825,14 +890,14 @@
 				uses = 1
 				bonus = 0.5
 			}
-			
+
             swap_ideas = {
                 remove_idea = unstable_active_1
                 add_idea = unstable_active_2
             }
 		}
 	}
-	
+
 	focus = {
 		id = COC_cult_hoi
 		icon = GFX_goal_generic_small_arms
@@ -853,7 +918,7 @@
 				uses = 2
 				bonus = 0.4
 			}
-			
+
             add_tech_bonus = {
 				name = COC_cult_hoi
 				category = artillery
@@ -862,7 +927,7 @@
 			}
 		}
 	}
-	
+
 	focus = {
 		id = COC_staff_reorg
 		icon = GFX_goal_generic_improve_relations
@@ -885,7 +950,7 @@
             }
 		}
 	}
-	
+
     focus = {
 		id = COC_naval_expan
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -906,7 +971,7 @@
 				uses = 2
 				bonus = 0.4
 			}
-		
+
             random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -925,7 +990,7 @@
 			}
 		}
 	}
-	
+
     focus = {
 		id = COC_stabilize_struggle
 		icon = GFX_goal_generic_major_alliance
@@ -946,7 +1011,7 @@
             }
 		}
     }
-		
+
     focus = {
 		id = COC_programmers_elite
 		icon = GFX_goal_generic_scientific_exchange
@@ -966,11 +1031,12 @@
             add_research_slot = 1
 		}
 	}
-	
+
 	focus = {
-		id = COC_testim_govno_2
-		icon = GFX_goal_generic_scientific_exchange
+		id = COC_staff_dictatorship
+		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = COC_programmers_elite }
+		mutually_exclusive = { focus = COC_revive_experiment }
 
 		x = 0
 		y = 1
@@ -982,11 +1048,220 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            create_wargoal = {
-				type = annex_everything
-				target = ROM
-				expire = 0
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.15
+            }
+
+            remove_ideas = power_struggle
+		}
+	}
+
+    focus = {
+		id = COC_global_conf
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = COC_staff_dictatorship }
+
+		x = 1
+		y = 1
+		relative_position_id = COC_staff_dictatorship
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            swap_ideas = {
+                remove_idea = is_end_2
+                add_idea = is_end_3
+            }
+		}
+	}
+
+    focus = {
+		id = COC_foreign_policy
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = COC_staff_dictatorship }
+
+		x = -1
+		y = 1
+		relative_position_id = COC_staff_dictatorship
+		cost = 10
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+        available = {
+		OR = {
+			has_government = neutrality
+			GER = { has_government = ROOT }
+			GER_will_support = yes
+		}
+		NOT = {
+			has_war_with = GER
+		}
+        }
+
+		completion_reward = {
+            set_rule = { can_send_volunteers = yes }
+            if = {
+				limit = { 78 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_claim = 78
+			}
+			if = {
+				limit = { 766 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_claim = 766
+			}
+			if = {
+				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_claim = 80
+			}
+			add_named_threat = { threat = 1 name = SOV_claim_bessarabia }
+			random_other_country = {
+				limit = { owns_state = 78 }
+				add_opinion_modifier = { target = COC modifier = claimed_bessarabia }
+				set_country_flag = SOV_added_claimed_bessarabia
 			}
 		}
 	}
-}		
+
+    focus = {
+		id = COC_cult_newfag
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = COC_staff_dictatorship }
+
+		x = 3
+		y = 1
+		relative_position_id = COC_staff_dictatorship
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            remove_ideas = unstable_active_2
+		}
+	}
+
+    focus = {
+		id = COC_proclaim_end_crisis
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = COC_global_conf }
+
+		x = 0
+		y = 1
+		relative_position_id = COC_global_conf
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            remove_ideas = is_end_3
+		}
+	}
+
+    focus = {
+		id = COC_ban_freezer
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		prerequisite = { focus = COC_cult_newfag }
+		mutually_exclusive = { focus = COC_unban_freezer }
+
+		x = 0
+		y = 1
+		relative_position_id = COC_cult_newfag
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            add_stability = 0.1
+		}
+	}
+
+    focus = {
+		id = COC_unban_freezer
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = COC_cult_newfag }
+		mutually_exclusive = { focus = COC_ban_freezer }
+
+		x = 2
+		y = 1
+		relative_position_id = COC_cult_newfag
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            add_stability = -0.1
+		}
+	}
+
+    focus = {
+		id = COC_revive_experiment
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = COC_programmers_elite }
+		mutually_exclusive = { focus = COC_staff_dictatorship }
+
+		x = -7
+		y = 1
+		relative_position_id = COC_programmers_elite
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.15
+            }
+		}
+	}
+}
+
+﻿focus_tree = {
+	id = coc_focus_egor
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = COC
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 50 y = 3000 }
+
+	focus = {
+		id = COC_start_of_the_end
+		icon = GFX_goal_generic_attack_allies
+
+		x = 10
+		y = 0
+		# relative_position_id = COC_programmers_elite
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.15
+            }
+		}
+	}
+}
