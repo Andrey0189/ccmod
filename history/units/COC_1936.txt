@@ -69,145 +69,145 @@ units = {
 	}
 	division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
 		division = {
 		location = 11670
-		division_template = "Anti-Egor"
+		division_template = "Abobus"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 	}
