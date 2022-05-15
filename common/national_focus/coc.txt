@@ -1229,39 +1229,4 @@
 	}
 }
 
-﻿focus_tree = {
-	id = coc_focus_egor
-
-	country = {
-		factor = 0
-
-		modifier = {
-			add = 10
-			tag = COC
-		}
-	}
-
-	default = no
-	continuous_focus_position = { x = 50 y = 3000 }
-
-	focus = {
-		id = COC_start_of_the_end
-		icon = GFX_goal_generic_attack_allies
-
-		x = 10
-		y = 0
-		# relative_position_id = COC_programmers_elite
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_popularity = {
-                ideology = democratic
-                popularity = 0.15
-            }
-		}
-	}
-}
+﻿
