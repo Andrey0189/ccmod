@@ -1,0 +1,27 @@
+coc_cw = {
+	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
+	icon = spr_the_seeds_of_revolution
+	allowed = {
+	    ROOT = {
+		    has_completed_focus = COC_start_of_the_end
+		}
+	}
+	visible = {
+
+	}
+	priority = 10
+}
+
+coc_cw_preparing = {
+	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
+	icon = spr_the_seeds_of_revolution
+	allowed = {
+	    ROOT = {
+		    has_completed_focus = COC_fatal
+		}
+	}
+	visible = {
+
+	}
+	priority = 9
+}

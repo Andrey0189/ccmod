@@ -43,3 +43,88 @@ country_event = {
         }
     }
 }
+
+# Puppeteers
+country_event = {
+    id = coc.2
+    title = coc.2.t
+    desc = coc.2.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = coc.2.a
+
+        effect_tooltip = {
+            #COC = { add_stability = 0.05 }
+        }
+    }
+}
+
+# their goal
+country_event = {
+    id = coc.3
+    title = coc.3.t
+    desc = coc.3.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = coc.3.a
+
+        effect_tooltip = {
+            #COC = { add_stability = 0.05 }
+        }
+    }
+}
+
+# start of the end
+country_event = {
+    id = coc.4
+    title = coc.4.t
+    desc = coc.4.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = coc.4.a
+
+        effect_tooltip = {
+            #COC = { add_stability = 0.05 }
+        }
+    }
+}
+
+# zakat
+country_event = {
+    id = coc.5
+    title = coc.5.t
+    desc = coc.5.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = coc.5.a
+
+        effect_tooltip = {
+            #COC = { add_stability = 0.05 }
+        }
+    }
+}
+
+# civil war
+country_event = {
+    id = coc.6
+    title = coc.6.t
+    desc = coc.6.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = coc.6.a
+
+        effect_tooltip = {
+            #COC = { add_stability = 0.05 }
+        }
+    }
+}
