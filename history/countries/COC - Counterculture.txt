@@ -118,231 +118,231 @@ add_namespace = {
 create_field_marshal = {
     name = "TheAltAccount"
     picture = "alt.dds"
-    skill = 1
-    attack_skill = 1
-    defense_skill = 1
-    planning_skill = 1
-    logistics_skill = 1
+    skill = 6
+    attack_skill = 6
+    defense_skill = 5
+    planning_skill = 5
+    logistics_skill = 5
 }
 
 create_field_marshal = {
 	name = "ANDREY"
 	picture = "Portrait_COC_ANDREY.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 7
+	logistics_skill = 6
 }
 
 create_field_marshal = {
 	name = "HFIB"
 	picture = "hfib.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 5
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 6
+	logistics_skill = 5
 }
 
 create_field_marshal = {
 	name = "Зан"
 	picture = "zan.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 5
+	attack_skill = 3
+	defense_skill = 7
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
 	name = "dasehak"
 	picture = "Portrait_dasehak.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 5
+	attack_skill = 7
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "Com"
 	picture = "com.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 7
 }
 
 create_corps_commander = {
 	name = "a73"
 	picture = "Portrait_COC_a73.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "Sanke"
 	picture = "saratov.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
 	name = "Gear196"
 	picture = "Portrait_COC_Gear.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Neon"
 	picture = "Portrait_COC_Neon.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Клюр"
 	picture = "Portrait_COC_Klur.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "antislope"
 	picture = "slope.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "9456"
 	picture = "9456.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
 	name = "AkaBucket"
 	picture = "akabucket.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "The Fak"
 	picture = "fak.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "habiassriz"
 	picture = "habiassriz.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Luftwaffle"
 	picture = "luftwaffle.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Poznan"
 	picture = "poznan.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
 	name = "topgamer228"
 	picture = "topgamer228.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 3
+	defense_skill = 6
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {
 	name = "voidpepe"
 	picture = "voidpepe.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Warimp"
 	picture = "warimp.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "zhmuokey"
 	picture = "zhmuokey.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "localcc"
 	picture = "Portrait_COC_localcc.dds"
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 6
+	logistics_skill = 6
 }
 
 if = {
