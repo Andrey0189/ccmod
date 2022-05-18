@@ -154,44 +154,9 @@ country_event = {
                 amount = coc_snar
             }
 
-            every_owned_state = {
-                set_demilitarized_zone = yes
-            }
-
-            196 = {
-                create_unit = {
-                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.1 start_equipment_factor = 0.7
-                    owner = COC
-                }
-                create_unit = {
-                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.1 start_equipment_factor = 0.7
-                    owner = COC
-                }
-                create_unit = {
-                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.1 start_equipment_factor = 0.7
-                    owner = COC
-                }
-                create_unit = {
-                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.1 start_equipment_factor = 0.7
-                    owner = COC
-                }
-                create_unit = {
-                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.1 start_equipment_factor = 0.7
-                    owner = COC
-                }
-                create_unit = {
-                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.1 start_equipment_factor = 0.7
-                    owner = COC
-                }
-                create_unit = {
-                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.1 start_equipment_factor = 0.7
-                    owner = COC
-                }
-                create_unit = {
-                    division = "name = \"Bob pony's division\" division_template = \"Bob pony's division\" start_experience_factor = 0.1 start_equipment_factor = 0.7
-                    owner = COC
-                }
-            }
+            #every_owned_state = {
+            #    set_demilitarized_zone = yes
+            #}
 
             start_civil_war = {
                 ruling_party = fascism
@@ -202,6 +167,41 @@ country_event = {
                     221 227 228 429 226 259 225 200
                 }
                 keep_political_leader = yes
+            }
+
+            196 = {
+                create_unit = {
+                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"Bob pony's division\" division_template = \"Bob pony's division\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
             }
 
             UKR = {
@@ -242,13 +242,154 @@ country_event = {
 				    target = D04
 				    type = civil_war
 				}
+
+				197 = {
+				    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+				}
+
+				203 = {
+				    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Bob pony's division\" division_template = \"Bob pony's division\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Bob pony's division\" division_template = \"Bob pony's division\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"PinkPanzer\" division_template = \"PinkPanzer\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+				}
+
+				193 = {
+				    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = UKR
+                    }
+				}
             }
 
             D04 = {
                 swap_ideas = {
-                remove_idea = the_great_history
-                add_idea = lost_hope
-            }
+                    remove_idea = the_great_history
+                    add_idea = lost_hope
+                }
+
+                200 = {
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                }
+
+                226 = {
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Bob pony's division\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                }
+
+                259 = {
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Bob pony's division\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                }
+
+                225 = {
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                    create_unit = {
+                        division = "name = \"PinkPanzer\" division_template = \"PinkPanzer\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                        owner = D04
+                    }
+                }
             }
     }
 }
