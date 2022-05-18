@@ -1,14 +1,14 @@
 ﻿l_russian:
 
- COC_fascism:0 "Контркультура"
- COC_fascism_DEF:0 "Контркультура"
+ COC_fascism:0 "Стримы/Общение"
+ COC_fascism_DEF:0 "Стримы/Общение"
  COC_democratic:0 "Контркультура"
  COC_democratic_DEF:0 "Контркультура"
  COC_neutrality:1 "Контркультура"
  COC_neutrality_DEF:1 "Контркультура"
  COC_communism:0 "Контркультура"
  COC_communism_DEF:0 "Контркультура"
- COC_fascism_ADJ:0 "Контркультур."
+ COC_fascism_ADJ:0 "Стримерско-общител."
  COC_democratic_ADJ:0 "Контркультур."
  COC_neutrality_ADJ:0 "Контркультур."
  COC_communism_ADJ:0 "Контркультур."
@@ -3190,4 +3190,3 @@
  vojvodina:0 "Воеводина"
  vojvodina_DEF:0 "Воеводина"
  vojvodina_ADJ:0 "Воеводинск."
- 

@@ -112,6 +112,22 @@ country_event = {
     }
 }
 
+country_event = {
+    id = coc.7
+    title = coc.5.t
+    desc = coc.5.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = coc.5.a
+        every_owned_state = {
+                set_demilitarized_zone = yes
+            }
+    }
+}
+
+
 # civil war
 country_event = {
     id = coc.6
@@ -122,9 +138,76 @@ country_event = {
 
     option = {
         name = coc.6.a
+            #start_civil_war = {
+            #    ruling_party = neutrality
+            #    ideology = communism
+            #    capital = 192
+            #    size = 0.4
+            #    states = {
+            #        192 834 198 199 201 202 193 203 197
+            #    }
+            #}
 
-        effect_tooltip = {
-            #COC = { add_stability = 0.05 }
-        }
+            every_owned_state = {
+                set_demilitarized_zone = yes
+            }
+
+            start_civil_war = {
+                ruling_party = fascism
+                ideology = neutrality
+                capital = 221
+                size = 0.7
+                states = {
+                    221 227 228 429 226 259 225 200
+                }
+                keep_political_leader = yes
+            }
+
+            UKR = {
+                transfer_state = 192
+                transfer_state = 834
+                transfer_state = 198
+                transfer_state = 199
+                transfer_state = 201
+                transfer_state = 202
+                transfer_state = 193
+                transfer_state = 203
+                transfer_state = 197
+
+                set_politics = {
+	                ruling_party = communism
+	                last_election = "1918.8.3"
+	                election_frequency = 48
+	                elections_allowed = no
+                }
+
+                create_country_leader = {
+	                name = "Com"
+	                desc = ""
+	                picture = "com.dds"
+	                expire = "1953.3.1"
+	                ideology = marxism
+	                traits = {
+
+	                }
+                }
+
+                declare_war_on = {
+				    target = ROOT
+				    type = civil_war
+				}
+				add_civil_war_target = ROOT
+				declare_war_on = {
+				    target = D04
+				    type = civil_war
+				}
+            }
+
+            D04 = {
+                swap_ideas = {
+                remove_idea = the_great_history
+                add_idea = lost_hope
+            }
+            }
     }
 }
