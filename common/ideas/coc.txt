@@ -319,5 +319,17 @@ ideas = {
                 army_attack_factor = -0.15
 			}
 		}
+
+		monitoring = {
+			#picture = generic_neutrality_drift_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			    weekly_manpower = 1000
+			}
+		}
 	}
 }

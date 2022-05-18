@@ -15,31 +15,25 @@ country_event = {
     option = {
         name = coc.1.a
         ai_chance = { factor 50 }
-        effect_tooltip = {
-            COC = { add_stability = 0.05 }
-        }
+        COC = { add_stability = 0.05 }
     }
 
     option = {
         name = coc.1.b
         ai_chance = { factor 50 }
-        effect_tooltip = {
-            COC = {
-                custom_effect_tooltip = COC_strange_events
-                load_focus_tree = german_focus
+        custom_effect_tooltip = COC_strange_events
+        load_focus_tree = coc_focus_egor
 
-                add_stability = -0.05
+        add_stability = -0.05
 
-                add_popularity = {
-                    ideology = neutrality
-                    popularity = -0.1
-                }
+        add_popularity = {
+            ideology = neutrality
+            popularity = -0.1
+        }
 
-                add_popularity = {
-                    ideology = fascism
-                    popularity = 0.1
-                }
-            }
+        add_popularity = {
+            ideology = fascism
+            popularity = 0.1
         }
     }
 }
@@ -54,10 +48,6 @@ country_event = {
 
     option = {
         name = coc.2.a
-
-        effect_tooltip = {
-            #COC = { add_stability = 0.05 }
-        }
     }
 }
 
@@ -71,10 +61,6 @@ country_event = {
 
     option = {
         name = coc.3.a
-
-        effect_tooltip = {
-            #COC = { add_stability = 0.05 }
-        }
     }
 }
 
@@ -88,10 +74,6 @@ country_event = {
 
     option = {
         name = coc.4.a
-
-        effect_tooltip = {
-            #COC = { add_stability = 0.05 }
-        }
     }
 }
 
@@ -148,6 +130,8 @@ country_event = {
             #    }
             #}
 
+            hidden_effect = {
+
             add_manpower = coc_pp
             add_equipment_to_stockpile = {
                 type = infantry_equipment
@@ -158,16 +142,68 @@ country_event = {
             #    set_demilitarized_zone = yes
             #}
 
+            remove_unit_leader = 1000
+            remove_unit_leader = 1001
+            remove_unit_leader = 1002
+            remove_unit_leader = 1005
+
             start_civil_war = {
                 ruling_party = fascism
                 ideology = neutrality
                 capital = 221
-                size = 0.7
+                size = 1.0
                 states = {
                     221 227 228 429 226 259 225 200
                 }
                 keep_political_leader = yes
+                keep_unit_leaders = {
+                    1000 1001 1002 1003 1004
+                }
             }
+
+            create_field_marshal = {
+	            name = "Egor Kruiz"
+	            id = 1003
+	            picture = "kruiz.dds"
+	            skill = 4
+	            attack_skill = 7
+	            defense_skill = 2
+	            planning_skill = 1
+	            logistics_skill = 1
+            }
+
+            create_corps_commander = {
+	            name = "Nixea"
+	            id = 1004
+	            picture = "nixea.dds"
+	            skill = 4
+	            attack_skill = 2
+	            defense_skill = 4
+	            planning_skill = 6
+	            logistics_skill = 7
+            }
+
+            create_corps_commander = {
+	            name = "komunre"
+	            picture = "komunre.dds"
+	            skill = 4
+	            attack_skill = 8
+	            defense_skill = 1
+	            planning_skill = 1
+	            logistics_skill = 1
+            }
+
+            create_corps_commander = {
+	            name = "antislope"
+	            picture = "slope.dds"
+	            skill = 3
+	            attack_skill = 3
+	            defense_skill = 3
+	            planning_skill = 3
+	            logistics_skill = 3
+            }
+
+            load_focus_tree = coc_focus_cw
 
             196 = {
                 create_unit = {
@@ -233,15 +269,37 @@ country_event = {
 	                }
                 }
 
+                create_field_marshal = {
+	                name = "Com"
+	                picture = "com.dds"
+	                skill = 4
+	                attack_skill = 4
+	                defense_skill = 4
+	                planning_skill = 4
+	                logistics_skill = 7
+                }
+
+                create_corps_commander = {
+	                name = "Meilsluiez"
+	                picture = "komunre.dds"
+	                skill = 3
+	                attack_skill = 3
+	                defense_skill = 3
+	                planning_skill = 3
+	                logistics_skill = 3
+                }
+
                 declare_war_on = {
 				    target = ROOT
 				    type = civil_war
 				}
-				add_civil_war_target = ROOT
+
 				declare_war_on = {
 				    target = D04
 				    type = civil_war
 				}
+
+				add_ideas = lost_hope
 
 				197 = {
 				    create_unit = {
@@ -391,5 +449,6 @@ country_event = {
                     }
                 }
             }
+        }
     }
 }

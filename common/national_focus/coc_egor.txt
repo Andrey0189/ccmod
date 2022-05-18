@@ -11,15 +11,15 @@ focus_tree = {
 	}
 
 	default = no
-	continuous_focus_position = { x = 50 y = 3000 }
+	continuous_focus_position = { x = 50 y = 1000 }
 
 	focus = {
 		id = COC_start_of_the_end
-		icon = GFX_goal_generic_attack_allies
-
-		x = 10
+		icon = GFX_focus_generic_strike_at_democracy1
+		# prerequisite = { focus = COC_full_neutrality }
+		x = 6
 		y = 0
-		# relative_position_id = COC_programmers_elite
+		#relative_position_id = COC_unban_egor
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -27,10 +27,270 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+            country_event = { id = coc.4 }
+            add_political_power = 50
             add_popularity = {
-                ideology = democratic
-                popularity = 0.15
+                ideology = fascism
+                popularity = 0.1
             }
 		}
-	}
+    }
+
+    focus = {
+		id = COC_the_puppeteers
+		#icon =
+		prerequisite = { focus = COC_start_of_the_end }
+		x = -4
+		y = 1
+		relative_position_id = COC_start_of_the_end
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            country_event = { id = coc.2 }
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.1
+            }
+
+            137 = {
+				limit = {
+					industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+    }
+
+    focus = {
+		id = COC_revers_col
+		#icon =
+		prerequisite = { focus = COC_the_puppeteers }
+		x = -1
+		y = 1
+		relative_position_id = COC_the_puppeteers
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            add_stability = -0.05
+            create_corps_commander = {
+	            name = "Meilsluiez"
+	            id = 1000
+	            picture = "com.dds"
+	            skill = 1
+	            attack_skill = 1
+	            defense_skill = 1
+	            planning_skill = 1
+	            logistics_skill = 1
+            }
+
+            137 = {
+				limit = {
+					industrial_complex > 0
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+    }
+
+    focus = {
+		id = COC_our_goal
+		#icon =
+		prerequisite = { focus = COC_the_puppeteers }
+		x = 1
+		y = 1
+		relative_position_id = COC_the_puppeteers
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            country_event = { id = coc.3 }
+            add_political_power = 50
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.1
+            }
+		}
+    }
+
+    focus = {
+		id = COC_raskol
+		#icon =
+		prerequisite = { focus = COC_start_of_the_end }
+		x = 0
+		y = 1
+		relative_position_id = COC_start_of_the_end
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            add_stability = -0.05
+            add_war_support = 0.05
+		}
+    }
+
+    focus = {
+		id = COC_more_activ
+		#icon =
+		prerequisite = { focus = COC_raskol }
+		x = 1
+		y = 1
+		relative_position_id = COC_raskol
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            add_ideas = high_active
+		}
+    }
+
+    focus = {
+		id = COC_more_unban
+		#icon =
+		prerequisite = { focus = COC_raskol }
+		x = -1
+		y = 1
+		relative_position_id = COC_raskol
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            create_corps_commander = {
+	            name = "komunre"
+	            id = 1001
+	            picture = "komunre.dds"
+	            skill = 4
+	            attack_skill = 8
+	            defense_skill = 1
+	            planning_skill = 1
+	            logistics_skill = 1
+            }
+		}
+    }
+
+    focus = {
+		id = COC_fatal
+		#icon =
+		prerequisite = { focus = COC_start_of_the_end }
+		x = 4
+		y = 1
+		relative_position_id = COC_start_of_the_end
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            custom_effect_tooltip = "Будут открыты решения по строительству бункеров"
+            #unlock_decision_tooltip = coc_bunker
+		}
+    }
+
+    focus = {
+		id = COC_interest_people
+		#icon =
+		prerequisite = { focus = COC_fatal }
+		x = -1
+		y = 1
+		relative_position_id = COC_fatal
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            custom_effect_tooltip = "Будут открыты решения по получению людских ресурсов"
+            set_variable = {
+	            var = coc_pp
+	            value = 0
+            }
+		}
+    }
+
+    focus = {
+		id = COC_cuckolds
+		#icon =
+		prerequisite = { focus = COC_fatal }
+		x = 1
+		y = 1
+		relative_position_id = COC_fatal
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            #custom_effect_tooltip = COC_oruzhie
+            custom_effect_tooltip = "Будут открыты решения по получению снаряжения"
+            set_variable = {
+	            var = coc_snar
+	            value = 0
+            }
+		}
+    }
+
+    focus = {
+		id = COC_zakat
+		#icon =
+		prerequisite = { focus = COC_revers_col }
+		prerequisite = { focus = COC_our_goal }
+		prerequisite = { focus = COC_more_unban }
+		prerequisite = { focus = COC_more_activ }
+		prerequisite = { focus = COC_interest_people }
+		prerequisite = { focus = COC_cuckolds }
+		x = 0
+		y = 3
+		relative_position_id = COC_raskol
+		cost = 2
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            country_event = { id = coc.5 }
+		}
+    }
 }

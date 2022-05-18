@@ -178,6 +178,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Com"
+	id = 1005
 	picture = "com.dds"
 	skill = 4
 	attack_skill = 4
@@ -238,6 +239,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "antislope"
+	id = 1002
 	picture = "slope.dds"
 	skill = 3
 	attack_skill = 3
