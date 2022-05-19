@@ -1,5 +1,5 @@
 focus_tree = {
-	id = coc_focus_egor
+	id = coc_focus_pre_egor
 
 	country = {
 		factor = 0
@@ -50,6 +50,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+		    swap_ideas = {
+                remove_idea = the_great_history
+                add_idea = control_outside
+            }
+
             country_event = { id = coc.2 }
             add_popularity = {
                 ideology = fascism
@@ -176,7 +181,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-            add_ideas = high_active
+            swap_ideas = {
+                remove_idea = unstable_active_2
+                add_idea = high_active
+            }
 		}
     }
 

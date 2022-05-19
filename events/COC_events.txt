@@ -4,6 +4,19 @@
 
 add_namespace = coc
 
+country_event = {
+    id = coc.hope
+    title = coc.hope.t
+    desc = coc.hope.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = coc.hope.a
+        COC = { add_stability = 0.05 }
+    }
+}
+
 # egor unban
 country_event = {
     id = coc.1
@@ -22,7 +35,7 @@ country_event = {
         name = coc.1.b
         ai_chance = { factor 50 }
         custom_effect_tooltip = COC_strange_events
-        load_focus_tree = coc_focus_egor
+        load_focus_tree = coc_focus_pre_egor
 
         add_stability = -0.05
 

@@ -17,7 +17,7 @@
 		id = COC_tenth_conference
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = {  }
-		x = 17
+		x = 8
 		y = 0
 		cost = 10
 
@@ -44,25 +44,7 @@
 
 		completion_reward = {
 			add_political_power = 100
-		}
-	}
-
-	focus = {
-		id = COC_TheAltAccount
-		icon = GFX_focus_generic_monarchy_2
-		prerequisite = { focus = COC_tenth_conference }
-		mutually_exclusive = { focus = COC_ANDREY }
-		x = -7
-		y = 1
-		relative_position_id = COC_tenth_conference
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
+			swap_ideas = {
                 remove_idea = power_struggle
                 add_idea = power_struggle_1
             }
@@ -70,52 +52,15 @@
 	}
 
 	focus = {
-		id = COC_ANDREY
-		icon = GFX_focus_hun_elect_a_king
+		id = COC_perestroy
+		# icon =
 		prerequisite = { focus = COC_tenth_conference }
-		mutually_exclusive = { focus = COC_TheAltAccount }
-		x = 7
-		y = 1
-		relative_position_id = COC_tenth_conference
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = power_struggle
-                add_idea = power_struggle_1
-            }
-
-			#remove_ideas = power_struggle
-
-			#remove_unit_leader = 100
-
-			create_country_leader = {
-				name = "ANDREY"
-				desc = ""
-				picture = Portrait_COC_ANDREY.dds
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-
-				}
-			}
-		}
-	}
-
-    focus = {
-		id = COC_full_perestroy
-		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = COC_ANDREY }
 		x = 1
 		y = 1
-		relative_position_id = COC_ANDREY
+		relative_position_id = COC_tenth_conference
 		cost = 5
 
-        bypass = {
+		bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = construction_effort_tt
 				all_owned_state = {
@@ -133,15 +78,12 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            add_stability = -0.03
-            add_war_support = -0.02
-
-            random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
@@ -155,13 +97,13 @@
 		}
 	}
 
-    focus = {
-		id = COC_reorg_senate
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = COC_ANDREY }
+	focus = {
+		id = COC_motivate_stuff
+		# icon =
+		prerequisite = { focus = COC_tenth_conference }
 		x = -1
 		y = 1
-		relative_position_id = COC_ANDREY
+		relative_position_id = COC_tenth_conference
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -169,24 +111,20 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 25
-            add_tech_bonus = {
-				name = COC_reorg_senate
-				category = electronics
-				uses = 2
-				bonus = 0.5
-			}
+			swap_ideas = {
+                remove_idea = is_end
+                add_idea = is_end_1
+            }
 		}
-    }
+	}
 
-    focus = {
-		id = COC_flexible_plan
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = COC_reorg_senate }
-		prerequisite = { focus = COC_full_perestroy }
-		x = 1
+	focus = {
+		id = COC_amnisty
+		# icon =
+		prerequisite = { focus = COC_motivate_stuff }
+		x = 0
 		y = 1
-		relative_position_id = COC_reorg_senate
+		relative_position_id = COC_motivate_stuff
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -194,532 +132,17 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-           swap_ideas = {
+		    add_stability = -0.05
+			swap_ideas = {
                 remove_idea = unstable_active
                 add_idea = unstable_active_1
             }
 		}
-    }
-
-    focus = {
-		id = COC_kazah_cult
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = COC_reorg_senate }
-		x = -1
-		y = 1
-		relative_position_id = COC_reorg_senate
-		cost = 5
-
-        bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 0
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-    }
-
-    focus = {
-		id = COC_conceptual_monitoring
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = COC_full_perestroy }
-		x = 1
-		y = 1
-		relative_position_id = COC_full_perestroy
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = newfag_problems
-                add_idea = newfag_problems_1
-            }
-		}
-    }
-
-    focus = {
-		id = COC_bot_remake
-		icon = GFX_goal_generic_production2
-		prerequisite = { focus = COC_flexible_plan }
-		x = 0
-		y = 1
-		relative_position_id = COC_flexible_plan
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = unstable_active_1
-                add_idea = unstable_active_2
-            }
-		}
-    }
-
-    focus = {
-		id = COC_industry_zan
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = COC_kazah_cult }
-		x = 0
-		y = 1
-		relative_position_id = COC_kazah_cult
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_tech_bonus = {
-				name = COC_industry_zan
-				category = industry
-				uses = 2
-				bonus = 0.5
-			}
-		}
-    }
-
-    focus = {
-		id = COC_diversity_senate
-		icon = GFX_focus_generic_diplomatic_treaty
-		prerequisite = { focus = COC_conceptual_monitoring }
-		x = 0
-		y = 1
-		relative_position_id = COC_conceptual_monitoring
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_ideas = senate_diversity
-		}
-    }
-
-    focus = {
-		id = COC_shop_remake
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = COC_bot_remake }
-		prerequisite = { focus = COC_industry_zan }
-		prerequisite = { focus = COC_new_era }
-		x = 1
-		y = 1
-		relative_position_id = COC_industry_zan
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = is_end_1
-                add_idea = is_end_2
-            }
-		}
-    }
-
-    focus = {
-		id = COC_defence_effort
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = COC_bot_remake }
-		prerequisite = { focus = COC_diversity_senate }
-		x = 1
-		y = 1
-		relative_position_id = COC_bot_remake
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_ideas = server_defence_plan
-		}
-    }
-
-    focus = {
-		id = COC_new_problem
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = COC_shop_remake }
-		prerequisite = { focus = COC_defence_effort }
-		x = 1
-		y = 1
-		relative_position_id = COC_shop_remake
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_stability = -0.1
-            add_political_power = 60
-		}
-    }
-
-    focus = {
-		id = COC_save_stability
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = COC_new_problem }
-		mutually_exclusive = { focus = COC_return_lamp }
-		mutually_exclusive = { focus = COC_unthinkable_variant }
-		x = 0
-		y = 1
-		relative_position_id = COC_new_problem
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = power_struggle_1
-                add_idea = power_struggle_2
-            }
-
-            add_popularity = {
-                ideology = neutrality
-                popularity = 0.15
-            }
-		}
-    }
-
-    focus = {
-		id = COC_end_crisis
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = COC_save_stability focus = COC_return_lamp }
-		x = 2
-		y = 1
-		relative_position_id = COC_save_stability
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = is_end_2
-                add_idea = is_end_3
-            }
-		}
-    }
-
-    focus = {
-		id = COC_support_coders
-		icon = GFX_focus_research2
-		prerequisite = { focus = COC_save_stability focus = COC_return_lamp }
-		x = 4
-		y = 1
-		relative_position_id = COC_save_stability
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_research_slot = 1
-		}
-    }
-
-    focus = {
-		id = COC_event_schedule
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = COC_end_crisis }
-		x = 0
-		y = 1
-		relative_position_id = COC_end_crisis
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            remove_ideas = unstable_active_2
-		}
-    }
-
-    focus = {
-		id = COC_assimilation
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = COC_support_coders }
-		x = 0
-		y = 1
-		relative_position_id = COC_support_coders
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            remove_ideas = newfag_problems_1
-		}
-    }
-
-    focus = {
-		id = COC_centrism
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = COC_save_stability }
-		prerequisite = { focus = COC_event_schedule }
-		prerequisite = { focus = COC_assimilation }
-		x = 0
-		y = 3
-		relative_position_id = COC_save_stability
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            remove_ideas = power_struggle_2
-            add_popularity = {
-                ideology = neutrality
-                popularity = 0.1
-            }
-		}
-    }
-
-    focus = {
-		id = COC_return_lamp
-		icon = GFX_goal_unknown
-		prerequisite = { focus = COC_new_problem }
-		mutually_exclusive = { focus = COC_save_stability }
-		mutually_exclusive = { focus = COC_unthinkable_variant }
-		x = 6
-		y = 0
-		relative_position_id = COC_save_stability
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = power_struggle_1
-                add_idea = power_struggle_2
-            }
-
-            add_popularity = {
-                ideology = neutrality
-                popularity = 0.1
-            }
-
-            create_country_leader = {
-				name = "Com"
-				desc = ""
-				picture = Portrait_COC_Com.dds
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-
-				}
-			}
-		}
-    }
-
-    focus = {
-		id = COC_full_neutrality
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = COC_return_lamp }
-		prerequisite = { focus = COC_event_schedule }
-		prerequisite = { focus = COC_assimilation }
-		mutually_exclusive = { focus = COC_unban_egor }
-		x = 0
-		y = 3
-		relative_position_id = COC_return_lamp
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            remove_ideas = power_struggle_2
-            swap_ideas = {
-                remove_idea = the_great_history
-                add_idea = the_great_history_1
-            }
-		}
-    }
-
-    focus = {
-		id = COC_unban_egor
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = COC_full_neutrality }
-		x = 0
-		y = 1
-		relative_position_id = COC_full_neutrality
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            country_event = { id = coc.1 }
-		}
-    }
-
-    focus = {
-		id = COC_unthinkable_variant
-		icon = GFX_focus_spr_unify_the_london_bureau
-		prerequisite = { focus = COC_new_problem }
-		mutually_exclusive = { focus = COC_save_stability }
-		mutually_exclusive = { focus = COC_return_lamp }
-		x = 15
-		y = 0
-		relative_position_id = COC_return_lamp
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_popularity = {
-                ideology = communism
-                popularity = 0.2
-            }
-
-            add_popularity = {
-                ideology = democracy
-                popularity = -0.1
-            }
-		}
-    }
-
-    focus = {
-		id = COC_perestroy
-		icon = GFX_focus_generic_industry_1
-		prerequisite = { focus = COC_TheAltAccount }
-		x = -1
-		y = 1
-		relative_position_id = COC_TheAltAccount
-		cost = 5
-
-        bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_stability = 0.02
-            add_war_support = 0.03
-
-            random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 0
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 	}
 
-    focus = {
-		id = COC_mare_nostrum
-		icon = GFX_focus_generic_black_sea_focus
-		prerequisite = { focus = COC_TheAltAccount }
-		x = 1
-		y = 1
-		relative_position_id = COC_TheAltAccount
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            #add_state_claim = 766
-			#add_state_claim = 46
-			#add_state_claim = 77
-			#add_state_claim = 211
-
-			navy_experience = 15
-			random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-    focus = {
-		id = COC_more_events
-		icon = GFX_goal_generic_national_unity
+	focus = {
+		id = COC_floppa_friday
+		# icon =
 		prerequisite = { focus = COC_perestroy }
 		x = 0
 		y = 1
@@ -731,20 +154,17 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            swap_ideas = {
-                remove_idea = unstable_active
-                add_idea = unstable_active_1
-            }
+		    add_stability = 0.1
 		}
 	}
 
 	focus = {
-		id = COC_counter_army
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = COC_mare_nostrum }
-		x = 0
+		id = COC_spain_help
+		# icon =
+		prerequisite = { focus = COC_amnisty focus =  COC_floppa_friday }
+		x = 5
 		y = 1
-		relative_position_id = COC_mare_nostrum
+		relative_position_id = COC_amnisty
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -752,110 +172,21 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            army_experience = 25
-            add_tech_bonus = {
-				name = COC_counter_army
-				category = land_doctrine
-				uses = 1
-				bonus = 1
-			}
+		    set_rule = {
+                #desc = TAG_my_rule_description
+                can_send_volunteers = yes
+            }
 		}
 	}
 
 	focus = {
-		id = COC_new_era
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = COC_counter_army focus = COC_kazah_cult}
-		x = 0
-		y = 4
-		relative_position_id = COC_tenth_conference
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = is_end
-                add_idea = is_end_1
-            }
-		}
-	}
-
-    focus = {
-		id = COC_colonisation
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = COC_new_era}
-		x = 0
-		y = 1
-		relative_position_id = COC_new_era
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            army_experience = 15
-            add_ideas = colonisation
-		}
-	}
-
-    focus = {
-		id = COC_colonisation_jeggy
-		icon = GFX_goal_unknown
-		prerequisite = { focus = COC_colonisation}
-		mutually_exclusive = { focus = COC_colonisation_rainbows }
-		x = -1
-		y = 1
-		relative_position_id = COC_colonisation
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            army_experience = 15
-            swap_ideas = {
-                remove_idea = colonisation
-                add_idea = colonisation_research
-            }
-		}
-	}
-
-    focus = {
-		id = COC_colonisation_rainbows
-		icon = GFX_goal_unknown
-		prerequisite = { focus = COC_colonisation}
-		mutually_exclusive = { focus = COC_colonisation_jeggy }
+		id = COC_return_events
+		# icon =
+		prerequisite = { focus = COC_floppa_friday }
+		prerequisite = { focus = COC_amnisty }
 		x = 1
 		y = 1
-		relative_position_id = COC_colonisation
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            army_experience = 15
-            swap_ideas = {
-                remove_idea = colonisation
-                add_idea = colonisation_prod
-            }
-		}
-	}
-
-	focus = {
-		id = COC_monitoring
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = COC_counter_army }
-		prerequisite = { focus = COC_more_events }
-		x = -1
-		y = 1
-		relative_position_id = COC_counter_army
+		relative_position_id = COC_amnisty
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -863,20 +194,76 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            swap_ideas = {
-                remove_idea = newfag_problems
-                add_idea = newfag_problems_1
-            }
+		    add_stability = 0.05
+		    add_war_support = 0.05
 		}
 	}
 
 	focus = {
-		id = COC_industry_com
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = COC_counter_army }
+		id = COC_jackbox
+		# icon =
+		prerequisite = { focus = COC_return_events }
+		x = -2
+		y = 1
+		relative_position_id = COC_return_events
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		    add_stability = 0.05
+		    add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = COC_chess
+		# icon =
+		prerequisite = { focus = COC_return_events }
+		x = 0
+		y = 1
+		relative_position_id = COC_return_events
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		    add_stability = 0.05
+		    add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = COC_sussy_baka
+		# icon =
+		prerequisite = { focus = COC_return_events }
+		x = 2
+		y = 1
+		relative_position_id = COC_return_events
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		    add_stability = 0.05
+		    add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = COC_rost_aktiva
+		# icon =
+		prerequisite = { focus = COC_chess }
+		prerequisite = { focus = COC_sussy_baka }
 		x = 1
 		y = 1
-		relative_position_id = COC_counter_army
+		relative_position_id = COC_chess
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -884,14 +271,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            add_tech_bonus = {
-				name = COC_industry_com
-				category = industry
-				uses = 1
-				bonus = 0.5
-			}
-
-            swap_ideas = {
+		    swap_ideas = {
                 remove_idea = unstable_active_1
                 add_idea = unstable_active_2
             }
@@ -899,12 +279,13 @@
 	}
 
 	focus = {
-		id = COC_cult_hoi
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = COC_more_events }
-		x = -3
+		id = COC_hope
+		# icon =
+		prerequisite = { focus = COC_chess }
+		prerequisite = { focus = COC_jackbox }
+		x = -1
 		y = 1
-		relative_position_id = COC_counter_army
+		relative_position_id = COC_chess
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -912,52 +293,21 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            add_tech_bonus = {
-				name = COC_cult_hoi
-				category = infantry_tech
-				uses = 2
-				bonus = 0.4
-			}
-
-            add_tech_bonus = {
-				name = COC_cult_hoi
-				category = artillery
-				uses = 2
-				bonus = 0.4
-			}
-		}
-	}
-
-	focus = {
-		id = COC_staff_reorg
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = COC_monitoring }
-		prerequisite = { focus = COC_new_era }
-		x = 0
-		y = 1
-		relative_position_id = COC_monitoring
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_political_power = 50
-            swap_ideas = {
+		    swap_ideas = {
                 remove_idea = is_end_1
                 add_idea = is_end_2
             }
 		}
 	}
 
-    focus = {
-		id = COC_naval_expan
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = COC_cult_hoi }
+	focus = {
+		id = COC_rassvet
+		# icon =
+		prerequisite = { focus = COC_rost_aktiva }
+		prerequisite = { focus = COC_hope }
 		x = 0
-		y = 1
-		relative_position_id = COC_cult_hoi
+		y = 2
+		relative_position_id = COC_chess
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -965,82 +315,18 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            add_tech_bonus = {
-				name = COC_naval_expan
-				category = naval_mines
-				uses = 2
-				bonus = 0.4
-			}
-
-            random_owned_controlled_state = {
-				limit = {
-					dockyard > 0
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-    focus = {
-		id = COC_stabilize_struggle
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = COC_industry_com }
-		x = 0
-		y = 1
-		relative_position_id = COC_industry_com
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = power_struggle_1
-                add_idea = power_struggle_2
-            }
-		}
-    }
-
-    focus = {
-		id = COC_programmers_elite
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = COC_stabilize_struggle }
-		prerequisite = { focus = COC_staff_reorg }
-		prerequisite = { focus = COC_naval_expan }
-		x = 0
-		y = 1
-		relative_position_id = COC_staff_reorg
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_research_slot = 1
+		    country_event = { id = coc.hope }
 		}
 	}
 
 	focus = {
-		id = COC_staff_dictatorship
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = COC_programmers_elite }
-		mutually_exclusive = { focus = COC_revive_experiment }
-
-		x = 0
+		id = COC_vera_v_alta
+		# icon =
+		prerequisite = { focus = COC_rassvet }
+		mutually_exclusive = { focus = COC_vera_v_andrey }
+		x = -5
 		y = 1
-		relative_position_id = COC_programmers_elite
+		relative_position_id = COC_rassvet
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -1048,93 +334,22 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            add_popularity = {
-                ideology = neutrality
-                popularity = 0.15
-            }
-
-            remove_ideas = power_struggle
-		}
-	}
-
-    focus = {
-		id = COC_global_conf
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = COC_staff_dictatorship }
-
-		x = 1
-		y = 1
-		relative_position_id = COC_staff_dictatorship
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            swap_ideas = {
-                remove_idea = is_end_2
-                add_idea = is_end_3
+		    add_stability = 0.05
+		    swap_ideas = {
+                remove_idea = power_struggle_1
+                add_idea = power_struggle_2
             }
 		}
 	}
 
-    focus = {
-		id = COC_foreign_policy
-		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = COC_staff_dictatorship }
-
-		x = -1
+	focus = {
+		id = COC_vera_v_andrey
+		# icon =
+		prerequisite = { focus = COC_rassvet }
+		mutually_exclusive = { focus = COC_vera_v_alta }
+		x = 5
 		y = 1
-		relative_position_id = COC_staff_dictatorship
-		cost = 10
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-        available = {
-		OR = {
-			has_government = neutrality
-			GER = { has_government = ROOT }
-			GER_will_support = yes
-		}
-		NOT = {
-			has_war_with = GER
-		}
-        }
-
-		completion_reward = {
-            set_rule = { can_send_volunteers = yes }
-            if = {
-				limit = { 78 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 78
-			}
-			if = {
-				limit = { 766 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 766
-			}
-			if = {
-				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 80
-			}
-			add_named_threat = { threat = 1 name = SOV_claim_bessarabia }
-			random_other_country = {
-				limit = { owns_state = 78 }
-				add_opinion_modifier = { target = COC modifier = claimed_bessarabia }
-				set_country_flag = SOV_added_claimed_bessarabia
-			}
-		}
-	}
-
-    focus = {
-		id = COC_cult_newfag
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = COC_staff_dictatorship }
-
-		x = 3
-		y = 1
-		relative_position_id = COC_staff_dictatorship
+		relative_position_id = COC_rassvet
 		cost = 5
 
 		cancel_if_invalid = yes
@@ -1142,91 +357,42 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-            remove_ideas = unstable_active_2
-		}
-	}
-
-    focus = {
-		id = COC_proclaim_end_crisis
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = COC_global_conf }
-
-		x = 0
-		y = 1
-		relative_position_id = COC_global_conf
-		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            remove_ideas = is_end_3
-		}
-	}
-
-    focus = {
-		id = COC_ban_freezer
-		icon = GFX_focus_spr_masters_of_our_own_fate
-		prerequisite = { focus = COC_cult_newfag }
-		mutually_exclusive = { focus = COC_unban_freezer }
-
-		x = 0
-		y = 1
-		relative_position_id = COC_cult_newfag
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_stability = 0.1
-		}
-	}
-
-    focus = {
-		id = COC_unban_freezer
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = COC_cult_newfag }
-		mutually_exclusive = { focus = COC_ban_freezer }
-
-		x = 2
-		y = 1
-		relative_position_id = COC_cult_newfag
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_stability = -0.1
-		}
-	}
-
-    focus = {
-		id = COC_revive_experiment
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = COC_programmers_elite }
-		mutually_exclusive = { focus = COC_staff_dictatorship }
-
-		x = -7
-		y = 1
-		relative_position_id = COC_programmers_elite
-		cost = 5
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-            add_popularity = {
-                ideology = democratic
-                popularity = 0.15
+		    add_stability = 0.05
+		    swap_ideas = {
+                remove_idea = power_struggle
+                add_idea = power_struggle_1
             }
+
+			create_country_leader = {
+				name = "ANDREY"
+				desc = ""
+				picture = Portrait_COC_ANDREY.dds
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+
+				}
+			}
 		}
 	}
+
+	focus = {
+		id = COC_unban_egor
+		icon = GFX_goal_generic_attack_allies
+		#prerequisite = { focus = COC_vera_v_andrey }
+		x = 0
+		y = 5
+		relative_position_id = COC_vera_v_andrey
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+            country_event = { id = coc.1 }
+		}
+    }
 }
 
 ﻿

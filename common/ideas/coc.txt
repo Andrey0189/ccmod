@@ -187,6 +187,24 @@ ideas = {
 			}
 		}
 
+		control_outside = {
+			#picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+                tag = COC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				drift_defence_factor = 0.5
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+
         the_great_history_1 = {
 			picture = FRA_scw_intervention_republicans_focus
 
