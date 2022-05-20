@@ -251,6 +251,22 @@ country_event = {
                     division = "name = \"Bob pony's division\" division_template = \"Bob pony's division\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
                     owner = COC
                 }
+                create_unit = {
+                    division = "name = \"Bob pony's division\" division_template = \"Bob pony's division\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"Bob pony's division\" division_template = \"Bob pony's division\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"Bob pony's division\" division_template = \"Bob pony's division\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
+                    owner = COC
+                }
+                create_unit = {
+                    division = "name = \"PinkPanzer\" division_template = \"BPinkPanzer\" start_experience_factor = 0.5 start_equipment_factor = 1"
+                    owner = COC
+                }
             }
 
             UKR = {
@@ -418,17 +434,8 @@ country_event = {
                         division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
                         owner = D04
                     }
-                    create_unit = {
-                        division = "name = \"Bob pony's division\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
-                        owner = D04
-                    }
-                }
 
                 259 = {
-                    create_unit = {
-                        division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
-                        owner = D04
-                    }
                     create_unit = {
                         division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
                         owner = D04
@@ -454,10 +461,6 @@ country_event = {
                     }
                     create_unit = {
                         division = "name = \"Abobus\" division_template = \"Abobus\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
-                        owner = D04
-                    }
-                    create_unit = {
-                        division = "name = \"PinkPanzer\" division_template = \"PinkPanzer\" start_experience_factor = 0.3 start_equipment_factor = 0.7"
                         owner = D04
                     }
                 }
