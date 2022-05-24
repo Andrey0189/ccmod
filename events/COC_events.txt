@@ -133,17 +133,9 @@ country_event = {
 
     option = {
         name = coc.6.a
-            #start_civil_war = {
-            #    ruling_party = neutrality
-            #    ideology = communism
-            #    capital = 192
-            #    size = 0.4
-            #    states = {
-            #        192 834 198 199 201 202 193 203 197
-            #    }
-            #}
+        hidden_effect = {
 
-            hidden_effect = {
+            country_event = { id = coc.8 }
 
             add_manpower = coc_pp
             add_equipment_to_stockpile = {
@@ -466,5 +458,29 @@ country_event = {
                 }
             }
         }
+    }
+}
+
+# choose side
+country_event = {
+    id = coc.8
+    title = coc.8.t
+    desc = coc.8.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = coc.8.a
+        TAG = D04
+    }
+
+    option = {
+        name = coc.8.b
+        TAG = UKR
+    }
+
+    option = {
+        name = coc.8.c
+        TAG = COC
     }
 }
